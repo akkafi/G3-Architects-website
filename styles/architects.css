@@ -173,19 +173,21 @@ main>section {
 /* teams and features section end here */
 
 /* love & enjoy section start */
-.feature_container{
+.feature_container {
     width: 586px;
 }
-.features{
-    gap: 40px;
+
+.features {
+    gap: 54px;
     justify-content: space-between;
 }
-#feature_section_title{
+
+#feature_section_title {
     border-left: 5px solid #FF900E;
     padding-left: 20px;
 }
 
-.feature_card{
+.feature_card {
     padding: 30px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 20px;
@@ -193,17 +195,30 @@ main>section {
 }
 
 
-.feature_card .feature_title{
+.feature_card .feature_title {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 0px;
     margin-bottom: 10px;
 }
 
-.feature_image{
-    width: 800px;
-    height: 1059px;
+.feature_image img {
+    width: 100%;
 }
+
+#experience_badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -92px;
+    margin-top: -100px;
+}
+
+#experience_year {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 /* love & enjoy section end */
 
 /* some facts related styles start */
@@ -278,8 +293,29 @@ main>section {
 
     .navbar,
     .nav_li_menu,
-    .teams {
+    .teams,
+    .features {
         flex-direction: column;
+    }
+
+    #experience_badge {
+        padding: 10px 10px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-left: 0px;
+        margin-top: -20px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #experience_year {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .feature_container {
+        width: 100%;
+        padding: 0 5px;
     }
 
     .brand {
@@ -372,6 +408,21 @@ main>section {
         flex-direction: column-reverse;
     }
 
+    .features {
+        flex-direction: column;
+    }
+
+    #experience_badge {
+        padding: 30px 30px;
+        margin-left: 0px;
+        margin-top: -100px;
+    }
+
+    .feature_container {
+        width: 100%;
+        padding: 0 5px;
+    }
+
     .our_features {
         margin: 50px 10px;
         text-align: center;
@@ -405,7 +456,7 @@ main>section {
         margin-top: 50px;
     }
 
-    .sponsors_company{
+    .sponsors_company {
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
     }
